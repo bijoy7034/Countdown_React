@@ -1,0 +1,82 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color:rgba(27,35,47,255);
+  color: #09abcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  margin-top: 5px;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  padding: 14px;
+  background-color: transparent;
+  border: rgba(118, 116, 116, 0.588) solid 0.2px;
+}
+span{
+  color: #09abcd;
+}
+i{
+  font-size: 100px;
+}
+p{
+  letter-spacing: 4px;
+  font-size: 70px;
+}
+.countdown-container{
+  width: 500px;
+  margin-top: 35%;
+}
+.countdown-digit{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.play-pause-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.play-pause-button .play-icon,
+.play-pause-button .pause-icon {
+  display: none;
+}
+
+.play-pause-button.playing .play-icon {
+  display: none;
+}
+
+.play-pause-button.paused .play-icon {
+  display: inline-block;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.play-pause-button.playing .pause-icon {
+  display: inline-block;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.play-pause-button.paused .pause-icon {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
